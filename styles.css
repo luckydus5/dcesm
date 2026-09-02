@@ -407,6 +407,17 @@ dl,dd{margin:0}
 .shop-item__action{align-self:flex-start; margin-top:auto; padding:.7rem .9rem; font-size:var(--fs-xs)}
 .shop-item__action span{font-size:1.1rem; line-height:1}
 
+/* Our own paid services carry more weight than the portals we help with */
+.shop-item--featured{border-color:var(--red-100); box-shadow:var(--sh)}
+.shop-item--featured .shop-item__label{color:var(--white); background:var(--red); border-radius:999px; padding:.32rem .6rem}
+.shop-item--featured .shop-item__action{background:var(--red); border-color:var(--red); color:var(--white)}
+.shop-item--featured .shop-item__action:hover{background:var(--red-600); border-color:var(--red-600)}
+
+/* Partner logos read as services we assist with, not endorsements */
+.shop-group{grid-column:1/-1; display:flex; align-items:center; gap:1rem; margin-top:.5rem}
+.shop-group__title{font-family:var(--font-display); font-size:1.05rem; letter-spacing:.06em; text-transform:uppercase; color:var(--n-600); white-space:nowrap}
+.shop-group__rule{flex:1; height:1px; background:var(--line)}
+
 /* ---------- Why ---------- */
 .why{
   display:grid; grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);
